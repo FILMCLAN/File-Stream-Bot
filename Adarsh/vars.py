@@ -10,7 +10,7 @@ class Var(object):
     MULTI_CLIENT = False
     API_ID = int(getenv('API_ID', '25065882'))
     API_HASH = str(getenv('API_HASH', '7711af532d45686e38c6b360161e2483'))
-    PICS = (environ.get('PICS','')).split()
+    PICS = (environ.get('PICS','https://graph.org/file/5607e02882ec4aebf95a2.jpg')).split()
     BOT_TOKEN = str(getenv('BOT_TOKEN', '6732590282:AAHGuZFg79T5R97UaRRmV19z3oaVZUR-qcY'))
     name = str(getenv('name', 'File_Stream_FcBot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
