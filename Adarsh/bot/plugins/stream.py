@@ -50,7 +50,7 @@ async def private_receive_handler(c: Client, m: Message):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(m.chat.id)
         if check_pass== None:
-            await m.reply_text("Login first using /login cmd \nDon't know the password contact @ArjunVR_AVR")
+            await m.reply_text("Login first using /login cmd \nDon't know the password contact @myd_boy")
             return
         if check_pass != MY_PASS:
             await pass_db.delete_user(m.chat.id)
@@ -113,7 +113,7 @@ async def private_receive_handler(c: Client, m: Message):
 
 <b>🖥 ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ :- </b> <i><b>{}</b></i>
 
-<b>♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛs ᴇxᴘɪʀᴇᴅ ♻️\n\n❖ YouTube.com/OpusTechz</b>"""
+<b>♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛs ᴇxᴘɪʀᴇᴅ ♻️\n\n❖ t.me/FILMCLAN</b>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, quote=True)
         await m.reply_text(
