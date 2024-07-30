@@ -17,7 +17,7 @@ async def maintainers(b,m):
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="ɪ  ᴀᴍ  ᴍᴀɪɴᴛᴀɪɴᴇᴅ  ʙʏ  [ʀᴀʜᴜʟ](https://telegram.me/MYD_BOY)",
+                    text="ɪ  ᴀᴍ  ᴍᴀɪɴᴛᴀɪɴᴇᴅ  ʙʏ  [𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐](https://telegram.me/MYD_BOY)",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
